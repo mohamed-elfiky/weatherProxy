@@ -7,7 +7,7 @@ It uses MongoDB to "Cache" the API responses and render them to the user if it w
 By caching the responses we reduce the load on the external API .
 
 # Main Page
-![MAIN PAGE](/screenshots/main.png)
+![MAIN PAGE](/screenshots/main.PNG)
 
 # Why MongoDB
 At first i wanted to user redis, but Mongo has a great support for geolocation data .  
