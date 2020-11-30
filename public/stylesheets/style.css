@@ -1,5 +1,5 @@
 h2,
-.temp, .pressure, .wind-spd, .weather-descr, #altit, #latitude-val {
+.temp, .pressure, .wind-spd, .weather-descr, #longit-val, #latitude-val {
   font-size: 40px;
 }
 
@@ -12,4 +12,11 @@ h2,
 #city-name-wrapper {
   text-align: center;
   
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
 }

@@ -1,3 +1,25 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body>
+    <header>
+    <%- include('./partials/header'); %>
+    </header>
+    <main>    
+        <section class="section" id='results_view'>
+            <h1><%= message %></h1>
+            <h2><%= error.status %></h2>
+        </section>
+    </main>
+    
+    <div id = "footer">
+    <%- include('./partials/footer'); %>
+    </div>
+    
+</body>
+
+</html>
