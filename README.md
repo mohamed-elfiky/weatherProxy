@@ -27,10 +27,10 @@ With GeoJson i have achieved a similar goal .
  npm run start
 
 # Test Results
-![Testing](screenshots/tests.png)
+![Testing](screenshots/tests.PNG)
 
 # Welcom Page
-![Welcome Page](screenshots/allow.png)
+![Welcome Page](screenshots/allow.PNG)
 
 
 
