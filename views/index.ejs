@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's the weather like?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    What's the weather like?
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="section" id='results_view'>
+      <div id="city-name-wrapper">
+        <h2 class="text-center">Weather for:</h2>
+        <h2 class="text-center" id="cityname"></h2>
+        <div id="city-forecast">
+            <p class="weather-descr col-xs-12"></p>
+            <p class="temp col-xs-12"></p>
+            <p class="pressure col-xs-12"></p>
+            <p class="wind-spd col-xs-12"></p>
+            <div id="longit-val"></div>
+            <div id="latitude-val"></div>
+          <!-- forecast  -->
+        </div>
+      </div>
+    </section>
+</body>
+    <script src="/javascripts/index.js"></script>
+</html>
