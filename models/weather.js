@@ -21,7 +21,7 @@ let weatherSchema = new Schema({
     wind_speed: {type: Number, required: true},
 }, {timestamps: true});
 
-weatherSchema.index({createdAt:1}, {expireAfterSeconds: 20});
+weatherSchema.index({createdAt:1}, {expireAfterSeconds: 7200 });
 weatherSchema.index({location: "2dsphere"});
 
 const Weather = mongoose.model('Weather', weatherSchema);

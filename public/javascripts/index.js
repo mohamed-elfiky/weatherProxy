@@ -15,8 +15,8 @@ $(document).ready(function() {
       let wind_speed;
       let country_name;
       let weather_description;
-      longit_text.innerHTML = "Longitude is " + longit;
-      latitude_text.innerHTML = "Latitude is " + lat;
+      longit_text.innerHTML = "Longitude : " + longit;
+      latitude_text.innerHTML = "Latitude : " + lat;
       const api_url = `weather/${lat},${longit}`;
       $.post(api_url, function(data) {
         city_name = data["city_name"];
@@ -26,10 +26,12 @@ $(document).ready(function() {
         pressure = data["pressure"];
         wind_speed = data["wind_speed"];
         $("#cityname").html(city_name + " &#40;" + country_name + "&#41; " + "has " + weather_description);
-        $(".temp").html(temp);
-        $(".pressure").html(pressure + " mBar");
-        $(".wind-spd").html(wind_speed + " m/s");
+        $(".temp").html("Temperature: "+ temp + " c");
+        $(".pressure").html("Pressure: "+ pressure + " mBar");
+        $(".wind-spd").html("Wind Speed: "+ wind_speed + " m/s");
 
+      }).fail(function() {
+        alert("something gone wrong");
       })
 
     }
