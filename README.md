@@ -11,9 +11,8 @@ By caching the responses we reduce the load on the external API .
 
 # Why MongoDB
 At first i wanted to user redis, but Mongo has a great support for geolocation data .  
-It allowed storing the geolocation (GeoJson) and set expiry time for the API response per coordinates (and surrounding area 1000 meter)  
-thus kepping the accuracy of the weather results  
-and reducing the api calls .    
+It allows storing the geolocation (GeoJson) and set expiry time for the API response per that geolocaion (and surrounding area - 1000 meter),   
+thus kepping the accuracy of the weather results and reducing the api calls .    
 
 # Why use GeoJson
 I could have used an external API to get the city from the cooridnates but i wanted to reduce
