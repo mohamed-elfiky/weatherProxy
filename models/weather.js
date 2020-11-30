@@ -35,7 +35,7 @@ module.exports.getWeather = async (lat, lon) => {
                         type: "Point",
                         coordinates: [lat,lon]
                     },
-                    $maxDistance:1000,
+                    $maxDistance:10000,
                     $minDistance:0
                 }
             }
